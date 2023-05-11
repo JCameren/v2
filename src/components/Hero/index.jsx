@@ -2,12 +2,12 @@ export default function Hero() {
   return (
     <section className="bg-gray-900 bg-gradient-to-b from-gray-900 to-navy relative -mt-24 pt-40 pb-20 md:py-36 text-white text-shadow-purple">
       <img
-        src={"https://wallpaper.dog/large/20539202.jpg"}
+        src={"https://naniwallpaper.com/files/wallpapers/anime-room/3-anime%20room-1080x1920.jpg"}
         alt="hero banner"
         className="absolute left-0 top-0 w-full h-full object-cover"
       />
-      <div className="group container mx-auto px-4 sm:px-6 lg:px-20 relative md:focus-within:ring ring-blue-300 transition-all rounded-2xl py-8 -mb-7">
-        <div className="absolute -inset-8 rounded-full filter blur-3xl transition-all bg-violet-900 opacity-0 group-hover:opacity-50 transform-gpu scale-75 group-hover:scale-100"></div>
+      <div className="group container mx-auto px-4 sm:px-6 lg:px-20 relative md:focus-within:ring ring-blue-300 transition-all rounded-2xl py-1 -mb-7">
+        <div className="absolute -inset-8 rounded-full"></div>
         <article className="relative lg:grid grid-cols-2 gap-5 items-stretch md:px-8 lg:px-0">
           <div className="self-center lg:pr-16">
             <span className="flex items-center justify-between w-full mb-6 text-[11px] font-bold uppercase tracking-wider text-white text-opacity-70">

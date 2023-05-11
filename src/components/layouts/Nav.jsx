@@ -28,16 +28,18 @@ export default function Nav({ children }) {
           </a>
           <a
             href="/"
-            className="text-center mx-auto lg:mx-3 transition-colors hover:text-violet-400"
+            className="text-center mx-auto lg:mx-3 transition-colors hover:text-blue-400"
           >
             Projects
           </a>
           <a
             href="/"
-            className="text-center mx-auto lg:mx-3 transition-colors hover:text-violet-400"
+            className="text-center mx-auto lg:ml-3 lg:mr-auto transition-colors hover:text-blue-400"
           >
             Projects
           </a>
+          <a href="/" className="text-base sm:text-sm button-sm border border-white hover:border-blue-200 hover:bg-blue-200 hover:text-blue-600 hover:text-shadow-none hover:shadow-none transition-all py-1">Contact</a>
+          <a href="/" className="text-base sm:text-sm lg:mx-3 button-sm bg-blue-500 hover:bg-blue-600 text-white transition-all py-1">Resume</a>
         </nav>
       </header>
       {children}

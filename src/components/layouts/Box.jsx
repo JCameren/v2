@@ -1,6 +1,6 @@
 export default function Box() {
   return (
-    <article className="flex flex-col md:w-full h-full py-6 md:p-8 p-8 bg-white md:focus-within:ring ring-purple-300 md:hover:shadow-purple md:focus-within:shadow-purple transition-all relative rounded-2xl md:shadow-sm-purple">
+    <article className="flex flex-col md:w-full h-full py-6 md:p-8 p-8 bg-white md:focus-within:ring ring-blue-300 md:hover:shadow-purple md:focus-within:shadow-purple transition-all relative rounded-2xl md:shadow-sm-purple">
       <img
         src="https://animesher.com/orig/1/185/1851/18518/animesher.com_anime-aesthetic-keyboard-office-1851864.jpg"
         alt=""
@@ -15,7 +15,7 @@ export default function Box() {
         Article Title
       </h1>
       <p className="text-base line-clamp-3 mb-5">lorem ipsum lorem ipsum...</p>
-      <p aria-hidden="true" className="text-violet-600 font-bold mt-auto">
+      <p aria-hidden="true" className="text-blue-600 font-bold mt-auto">
         Read more
       </p>
       <a href="/" className="opacity-0 absolute inset-0">
