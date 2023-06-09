@@ -1,8 +1,8 @@
 const express = require("express")
 const router = express.Router()
-const projectsCtrl = require("../../controllers/api/articles")
+const articlesCtrl = require("../../controllers/api/articles")
 
-router.get('/', projectsCtrl.index)
-router.get('/:id', projectsCtrl.show)
+router.get('/', articlesCtrl.index)
+router.get('/:id', articlesCtrl.show)
 
 module.exports = router

@@ -1,6 +1,6 @@
 import sendRequest from "./sendRequest";
 
-const BASE_URL = '/api/projects'
+const BASE_URL = '/api/articles'
 
 export const index = async () => {
     return sendRequest(BASE_URL)

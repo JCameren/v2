@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 export default function Nav({ children }) {
   return (
     <>
-      <header className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-20 flex items-center h-20 text-white font-[550] text-sm shadow-sm">
+      <header className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-20 flex items-center h-16 text-white font-[550] text-sm shadow-md sticky">
         <nav aria-label="Logo menu" className="relative z-50 flex">
           <a href="/">logo</a>
         </nav>

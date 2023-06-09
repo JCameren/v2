@@ -8,15 +8,46 @@
   /* font-weight: bold; */
 }
 
+@font-face {
+  font-family: "Futura Medium";
+  src: url("./fonts/futura-medium-bt.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura Bold";
+  src: url("./fonts/futur.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Figtree Black";
+  src: url("./fonts/Figtree-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Figtree Regular";
+  src: url("./fonts/Figtree-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Figtree Bold";
+  src: url("./fonts/Figtree-Bold.ttf") format("truetype");
+}
+
+
+
 body {
   @apply w-full;
   @apply h-full;
   @apply antialiased;
   overflow-x: hidden;
-  /* @apply prose max-w-none mt-0 mb-0; */
-  font-family: "prose";
+  font-family: "Figtree Regular";
 }
 
 a {
   text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: "Figtree Black" !important;
+  letter-spacing:  0.02em;
 }

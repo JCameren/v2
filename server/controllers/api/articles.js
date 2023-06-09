@@ -1,8 +1,8 @@
 const client = require("../../sanityio/client")
 
 const index = async (req, res) => {
-    const projects = await client.fetch(`*[_type == "article"]`)
-    res.json(projects)
+    const articles = await client.fetch(`*[_type == "article"]`)
+    res.json(articles)
 }
 
 const show = async (req, res) => {
