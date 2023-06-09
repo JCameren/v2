@@ -10,7 +10,7 @@ export default function App() {
       <Nav />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/articles/:id" element={<ArticlePage />} />
+          <Route path="/articles/:slug" element={<ArticlePage />} />
         </Routes>
       <Footer />
     </>

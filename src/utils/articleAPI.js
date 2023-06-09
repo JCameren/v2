@@ -6,6 +6,6 @@ export const index = async () => {
     return sendRequest(BASE_URL)
 }
 
-export const show = async (id) => {
-    return sendRequest(`${BASE_URL}/${id}`)
+export const show = async (slug) => {
+    return sendRequest(`${BASE_URL}/${slug}`)
 }
