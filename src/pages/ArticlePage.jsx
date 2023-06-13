@@ -7,11 +7,20 @@ export default function ArticlePage() {
   const { slug } = useParams();
   const dispatch = useDispatch();
   const article = useSelector((state) => state.articles.singleArticle);
-  const { title } = article[0];
 
   useEffect(() => {
     dispatch(show(slug));
   }, [dispatch, slug]);
 
-  return <h1>{title}</h1>;
+  useEffect(() => {
+    console.log(article, "article specified");
+  }, [article]);
+
+  if (!article) {
+    return <h1>Loading...</h1>
+  }
+
+  return (
+    <h1>{article[0].title}</h1>
+  );
 }

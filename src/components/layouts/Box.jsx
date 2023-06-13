@@ -14,7 +14,7 @@ const urlFor = (source) => builder.image(source);
 
 export default function Box({ slug, description, title, image }) {
   return (
-    <article className=" shadow-md flex flex-col md:w-full h-full overflow-hidden bg-base-200 md:focus-within:ring  hover:ring ring-blue-300 md:hover:shadow-blue md:focus-within:shadow-purple transition-all relative rounded-2xl md:shadow-sm-purple">
+    <article className="shadow-md flex flex-col md:w-full h-full overflow-hidden bg-base-200 md:focus-within:ring  hover:ring ring-blue-300 md:hover:shadow-blue md:focus-within:shadow-purple transition-all relative rounded-2xl md:shadow-sm-purple">
       <img
         src={urlFor(image)}
         alt=""
