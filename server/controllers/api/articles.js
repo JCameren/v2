@@ -12,7 +12,13 @@ const show = async (req, res) => {
   res.json(article);
 };
 
+const search = async (req, res) => {
+  const matchingQueries = await client.fetch(`*[_type == "article" && (title == "${req.params.query}" || title match "${req.params.query}")]`)
+  res.json(matchingQueries)
+}
+
 module.exports = {
   index,
   show,
+  search
 };

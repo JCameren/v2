@@ -4,8 +4,8 @@ import SearchBar from "./SearchBar";
 export default function Nav({ children }) {
   return (
     <>
-      <header className=" flex items-center justify-between h-16 px-4 py-2 text-white font-[550] text-sm shadow-md">
-        <div className="flex items-center w-80 md:w-85 sm: w-90">
+      <header className=" flex items-center h-16 px-4 py-2 text-white font-[550] text-sm shadow-md w-full">
+        <div className="flex items-center justify-between lg:w-4/5  md:w-10/12 sm:w-11/12 mx-auto">
         <nav aria-label="Logo menu" className="relative z-50 flex">
           <NavLink to="/" className="btn btn-ghost"><h1>crimes against humanity</h1></NavLink>
         </nav>
@@ -16,9 +16,8 @@ export default function Nav({ children }) {
           aria-label="Main menu"
           className=""
         >
-          {/* <dl className="hidden shrink-0 lg:flex group relative ml-auto mt-3 mb-0 px-3 pt-2 pb-5 cursor-pointer"></dl> */}
           <button
-            className="btn btn-square btn-ghost"
+            className="btn btn-square btn-ghost inline-flex items-center"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

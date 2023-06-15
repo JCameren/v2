@@ -9,3 +9,7 @@ export const index = async () => {
 export const show = async (slug) => {
     return sendRequest(`${BASE_URL}/${slug}`)
 }
+
+export const search = async (query) => {
+    return sendRequest(`${BASE_URL}/search/${query}`)
+}

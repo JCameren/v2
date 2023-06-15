@@ -31,3 +31,18 @@ export const show = (slug) => {
         }
     }
 }
+
+export const search = (query) => {
+    return async (dispatch) => {
+        const articles = async () => {
+            return await articleAPI.search(query)
+        }
+
+        try {
+            const searchResults = await articles()
+            dispatch(articleActions.search(searchResults))
+        } catch (err) {
+            throw new Error(`${err}`)
+        }
+    }
+}

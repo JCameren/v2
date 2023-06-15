@@ -2,11 +2,13 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     allArticles: [],
-    singleArticle: null
+    singleArticle: null,
+    query: '',
+    queriedArticles: []
 }
 
 const articleSlice = createSlice({
-    name: "project",
+    name: "article",
     initialState,
     reducers: {
         index(state, action) {
@@ -14,6 +16,12 @@ const articleSlice = createSlice({
         },
         show(state, action) {
             state.singleArticle = action.payload
+        },
+        setQuery(state, action) {
+            state.query = action.payload
+        },
+        search(state, action) {
+            state.queriedArticles = action.payload
         }
     }
 })
